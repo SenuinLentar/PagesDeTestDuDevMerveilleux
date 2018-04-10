@@ -9,14 +9,14 @@
         <link rel="stylesheet" type="text/css" href="css/styleConnexion.css" />
         <link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
         <link rel="stylesheet" type="text/css" href="../ciao.css" />
-        <title>Test conexion du dev Merveilleux</title>
+        <title>Connexion au Site Du Dev Merveilleux</title>
     </head>
 
     <body>
 
     <!-- L'en-tête -->
     <header>
-    <h1>Test Connexion</h1>
+    <h1>Connexion</h1>
     </header>
 
 
@@ -25,7 +25,8 @@
     <div id="corps">
 
         <!-- Le menu -->
-         <?php include("../menu.php"); ?>
+         <?php include("..\menu.php"); ?>
+
 <div class="container">
 
 

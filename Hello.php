@@ -1,5 +1,10 @@
 <?php
     session_start();
+    if(isset($_SESSION['pirate']) AND $_SESSION['pirate'] == 1)
+    {
+        $_SESSION['pirate'] = 0;
+        echo '<script>alert("PIRATE pas ma BDD!");</script>';
+    }
 ?>
 <!DOCTYPE html>
 <html>
