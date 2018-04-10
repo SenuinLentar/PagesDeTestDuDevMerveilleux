@@ -1,0 +1,208 @@
+/*Voici la feuille de style pour Hello.html.
+				Enjoy!
+*/
+
+@font-face{
+	font-family: 'archerus';
+	src : url('font/archerus.woff');
+}
+
+body
+{
+	background: url("images/tatsumaki.jpg") bottom right no-repeat, url("images/pokemon.jpg") no-repeat fixed;
+}
+
+p, li, ul, #titre_image
+{
+	color: #FFFFFF;
+	font-size: 1.2em;
+	font-family: 'archerus', Verdana, "Times New Roman", serif;
+	text-align: left;
+	list-style-position: inside;
+	opacity: 1;
+    word-wrap: break-word;
+}
+
+@media all and (max-width: 1500px)
+{
+    p, li, ul, #titre_image
+    {
+        background-color: black;
+    }
+}
+
+strong
+{
+    color: #FFFFFF;
+	font-size: 1.2em;
+	font-family: 'archerus', Verdana, "Times New Roman", serif;
+	text-align: left;
+	list-style-position: inside;
+	opacity: 1;
+    word-wrap: break-word;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h1
+{
+	color: #A7A7A7;
+	font-size: 3em;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: center;
+	text-shadow: 2px 2px 4px #A7A7A7;
+    border: 3px grey solid;
+    width: 90%;
+    min-width: 500px;
+    max-width: 2000px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+nav
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 3px grey solid;
+    width: 90%;
+    min-width: 500px;
+    max-width: 2000px;
+    margin: auto;
+    font-weight: bold;
+    font-size: 1.7em;
+    margin-bottom: 50px;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+td, th
+{
+    border: 3px solid grey;
+    font-size: 1.3em;
+    color: #EBFFB8;
+    padding: 7px;
+
+}
+
+caption
+{
+    font-size: 1.5em;
+    color: #EBFFB8;
+    font-weight: bold;
+    padding: 5px;
+        text-align: left;
+}
+
+.menu
+{
+    margin: auto;
+    background-color: grey;
+    color: silver;
+}
+
+a
+{
+	text-decoration: none;
+	color : silver;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: white;
+}
+
+.important
+{
+	font-style: oblique;
+}
+
+.intro strong
+{
+	font-style: italic;
+	font-weight: normal;
+}
+
+.outro em
+{
+	font-weight: bold;
+}
+
+.image_flottante_gauche
+{
+	float: left;
+	opacity: 0.8;
+	border: 3px silver groove;
+	border-radius: 2px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.image_flottante_gauche:hover
+{
+	opacity: 1;
+}
+
+footer, #envoie_fichier
+{
+	clear: both;
+    margin-top: 10px;
+}
+
+.dragon
+{
+    text-align: justify;
+    border: 3px grey solid;
+    width: 80%;
+    min-width: 300px;
+    max-width: 1200px;
+    height: 90%;
+    min-height: 400px;
+    max-height: 1200px;
+    margin: left;
+    overflow: auto;
+    padding: 10px;
+}
+
+#eloge
+{
+    width: 50%;
+    min-width: 350px;
+    max-width: 700px;
+    overflow: auto;
+    text-align: left;
+    padding: 5px;
+}
+
+.audio
+{
+    border: 3px grey solid;
+    width: 55%;
+    min-width: 540px;
+    max-width: 1050px;
+    padding: 2px;
+}
+
+.video
+{
+    border: 3px grey solid;
+    width: 55%;
+    min-width: 540px;
+    max-width: 1050px;
+    height: 90%;
+    min-height: 400px;
+    max-height: 1200px;
+    padding: 2px;
+}
+
+#fun
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
