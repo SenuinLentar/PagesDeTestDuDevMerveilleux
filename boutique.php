@@ -20,20 +20,15 @@
         <header>
                 <h1>Vous êtes dans la Boutique du Dev Merveilleux</h1>
         </header>
-       <div>
+       <div id="boutique">
         <?php
             include("menu.php");
 
-            $reponse = $bdd->query('SELECT NameGoodies, URL FROM Goodies') or die(print_r($bdd->errorInfo()));
+            $reponse = $bdd->query('SELECT * FROM Goodies') or die(print_r($bdd->errorInfo()));
             while ($donnees = $reponse->fetch())
             {
-
         ?>
-
-               <p>
-                   <img src="<?php echo $donnees['URL']; ?>" alt="<?php echo $donnees['NameGoodies']; ?>" title="<?php echo $donnees['NameGoodies']; ?>" />
-               </p>
-
+               <img src="<?php echo $donnees['URL']; ?>" alt="<?php echo $donnees['NameGoodies']; ?>" title="<?php echo $donnees['NameGoodies']; ?>" class="picture" id="id<?php echo $donnees['Id']; ?>"/>
         <?php
             }
             $reponse->closeCursor(); // Termine le traitement de la requête
