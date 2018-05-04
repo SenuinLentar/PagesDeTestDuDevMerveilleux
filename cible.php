@@ -64,8 +64,7 @@
 
                     if (in_array($extension_upload, $extension_autorisees))
                     {
-                        $name = str_replace(' ','_',
-                                            basename($_FILES['fichier']['name']));
+                        $name = str_replace(' ','_', basename($_FILES['fichier']['name']));
                         move_uploaded_file($_FILES['fichier']['tmp_name'], 'fichiers_envoye/' . $name);
                         echo "J'ai bien récupéré votre fichier!";
                     }
