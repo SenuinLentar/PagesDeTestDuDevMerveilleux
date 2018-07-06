@@ -19,17 +19,23 @@ $bdd = getBDD();
         include("menu.php");
         include("menuRe.php");
         $reponse = $bdd->query('SELECT * FROM competences ORDER BY nom') or die(print_r($bdd->errorInfo()));
-
+        $inc = 0;
         while ($donnees = $reponse->fetch())
         {
+            $inc ++;
         ?>
         <p>
-            <strong><?php echo $donnees['nom']; ?> : </strong><br /><?php echo $donnees['description']; ?><br /> Avec niveau : <?php echo $donnees['avec_niveau']; ?>
+            <strong><?php echo $donnees['nom']; ?> : </strong><br /><?php echo $donnees['description']; ?><br /> Avec niveau : <?php echo $donnees['avec_niveau']; ?><br /> <?php echo $inc; ?>
         </p>
         <?php
         }
-
-
+        ?>
+        <p>
+            <?php
+            echo $inc;
+            ?>
+        </p>
+        <?php
         $reponse->closeCursor(); // Termine le traitement de la requête
 
         ?>
